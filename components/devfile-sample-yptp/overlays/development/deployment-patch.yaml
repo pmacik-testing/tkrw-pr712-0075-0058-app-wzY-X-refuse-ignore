@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-yptp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0058-tenant/tkrw-pr712-0075-0058-app/devfile-sample-yptp@sha256:5e051868e519c86ca05760d7251e2257f2deb1ae1418155f235712808eef8e7a
+        name: my-nodejs
+        resources: {}
+status: {}
